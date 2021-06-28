@@ -1,0 +1,23 @@
+{
+  "name": "know-me",
+  "version": "1.0.0",
+  "description": "Know me via cmd",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shekhutsav1962001/know-me.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Utsav Shekh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shekhutsav1962001/know-me/issues"
+  },
+  "homepage": "https://github.com/shekhutsav1962001/know-me#readme"
+}
