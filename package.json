@@ -1,10 +1,11 @@
 {
-  "name": "know-me",
-  "version": "1.0.0",
-  "description": "Know me via cmd",
+  "name": "utsavshekh",
+  "version": "1.0.1",
+  "description": "know me",
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/shekhutsav1962001/know-me/issues"
   },
-  "homepage": "https://github.com/shekhutsav1962001/know-me#readme"
+  "homepage": "https://github.com/shekhutsav1962001/know-me#readme",
+  "dependencies": {
+    "boxen": "^5.0.1",
+    "chalk": "^4.1.1",
+    "clear": "^0.1.0"
+  }
 }
