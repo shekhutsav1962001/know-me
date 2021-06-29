@@ -5,7 +5,9 @@
 
 const boxen = require("boxen");
 const chalk = require("chalk");
+const inquirer = require("inquirer");
 const clear = require("clear");
+const open = require("open");
 
 // clear screen
 clear();
@@ -71,3 +73,29 @@ const tip = [
   "",
 ].join("\n");
 console.log(tip);
+
+const questions = [
+  {
+    type: "list",
+    name: "action",
+    message:`${chalk.green.bold("What you want to do ?")}`,
+    choices: [
+      {
+        name: `Open ${chalk.green.bold("resume")}?`,
+        value: () => {
+          open("https://shekhutsav1962001.github.io/portfolio/assets/resume/Utsav_Shekh_Resume.pdf");
+          console.log("\nDone, see you soon.\n");
+        }
+      },
+      {
+        name: "Just quit.",
+        value: () => {
+          console.log("Ok, bye.\n");
+        }
+      }
+    ]
+  }
+];
+
+const prompt = inquirer.createPromptModule();
+prompt(questions).then(answer => answer.action());
